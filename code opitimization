@@ -1,0 +1,32 @@
+#include<stdio.h>
+#include<stdlib.h>
+int main()
+{
+    int fact = 1,i,num;
+    printf("Enter the number : ");
+    scanf("%d",&num);
+    for(i = 1;i<=num;i++){
+        fact = fact * i;
+        int b = 8725;
+        int a = b*9;
+    }
+    printf("Factorial of %d is : %d",num,fact);
+    return 0;
+}
+
+//optimized code
+
+#include<stdio.h>
+#include<stdlib.h>
+int main()
+{
+    int fact = 1,i=1,num;
+    printf("Enter the number : ");
+    scanf("%d",&num);
+    do{
+        fact = fact *i;
+        i++;
+    }while(i<=num);
+    printf("Factorial of %d is : %d",num,fact);
+    return 0;
+}
